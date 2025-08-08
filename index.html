@@ -1059,13 +1059,13 @@
 
             // フォームデータのチェック
             if (!formData.fourteenCount) {
-                alert('まつげパーマの施術中もしくは施術後に目の痛みや刺激、違和感を感じたことはありますか？ご選択ください。');
+                alert('まつ毛の施術中もしくは施術後に目の痛みや刺激、違和感を感じたことはありますか？ご選択ください。');
                 return;
             }
 
             // フォームデータのチェック
             if (!formData.fifteenCount) {
-                alert('まつげパーマの施術後にクリニック、病院の治療を受けたことはありますか？ご選択ください。');
+                alert('まつ毛の施術後にクリニック、病院の治療を受けたことはありますか？ご選択ください。');
                 return;
             }
 
@@ -1090,7 +1090,7 @@
             // LINEトークにメッセージを送信
             liff.sendMessages([{
                 type: 'text',
-                text: `≪アンケート≫\n【お名前】\n・${formData.message}\n\n【ご性別】\n・${formData.oneCount}\n\n【電話番号】\n・${formData.message2}\n\n【来店動機】\n・${formData.twoCount}\n\n【アレルギー】\n・${formData.threeCount}\n\n【パッチテストのご希望】\n・${formData.fourCount}\n\n【施術中どのように過ごしたいですか？】\n・${formData.fiveCount}\n\n【目や目元周りの皮膚に関して疾患はありますか？】\n・${formData.sixCount}\n\n【コンタクトレンズは使用されていますか？】\n・${formData.sevenCount}\n\n【日常生活で目の乾燥・かすみを感じることはありますか？】\n・${formData.eightCount}\n\n【ものもらいになりやすいですか？】\n・${formData.nineCount}\n\n【クリニック、病院に置いて目に関する手術を受けたことがありますか？】\n・${formData.tenCount}\n\n【現在の体調はいかがですか？】\n・${formData.elevenCount}\n\n【まつげエクステを体験されたことはありますか？】\n・${formData.twelveCount}\n\n【まつげパーマを体験されたことはありますか？】\n・${formData.thirteenCount}\n\n【まつげパーマの施術中もしくは施術後に目の痛みや刺激、違和感を感じたことはありますか？】\n・${formData.fourteenCount}\n\n【まつげパーマの施術後にクリニック、病院の治療を受けたことはありますか？】\n・${formData.fifteenCount}\n\n【まつげのお悩みはありますか？】\n・${formData.sixteenCount}\n\n【クレンジングは何をお使いですか？】\n・${formData.seventeenCount}\n\n【今日の仕上がりイメージはありますか？】\n・${formData.eighteenCount}`
+                text: `≪アンケート≫\n【お名前】\n・${formData.message}\n\n【ご性別】\n・${formData.oneCount}\n\n【電話番号】\n・${formData.message2}\n\n【来店動機】\n・${formData.twoCount}\n\n【アレルギー】\n・${formData.threeCount}\n\n【パッチテストのご希望】\n・${formData.fourCount}\n\n【施術中どのように過ごしたいですか？】\n・${formData.fiveCount}\n\n【目や目元周りの皮膚に関して疾患はありますか？】\n・${formData.sixCount}\n\n【コンタクトレンズは使用されていますか？】\n・${formData.sevenCount}\n\n【日常生活で目の乾燥・かすみを感じることはありますか？】\n・${formData.eightCount}\n\n【ものもらいになりやすいですか？】\n・${formData.nineCount}\n\n【クリニック、病院に置いて目に関する手術を受けたことがありますか？】\n・${formData.tenCount}\n\n【現在の体調はいかがですか？】\n・${formData.elevenCount}\n\n【まつげエクステを体験されたことはありますか？】\n・${formData.twelveCount}\n\n【まつげパーマを体験されたことはありますか？】\n・${formData.thirteenCount}\n\n【まつ毛の施術中もしくは施術後に目の痛みや刺激、違和感を感じたことはありますか？】\n・${formData.fourteenCount}\n\n【まつ毛の施術後にクリニック、病院の治療を受けたことはありますか？】\n・${formData.fifteenCount}\n\n【まつげのお悩みはありますか？】\n・${formData.sixteenCount}\n\n【クレンジングは何をお使いですか？】\n・${formData.seventeenCount}\n\n【今日の仕上がりイメージはありますか？】\n・${formData.eighteenCount}`
             }]).then(() => {
                 /* メッセージ送信成功時の処理 */
                 alert('ご記入ありがとうございます。');
